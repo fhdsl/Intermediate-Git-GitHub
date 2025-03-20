@@ -9,6 +9,11 @@ pushing-to-github
 branching
 merging-and-pull-requests
 appendix-merge-conflicts-during-pull-requests
+appendix-undoing
+unstage-a-file
+unmodify-a-file
+revert-a-commit
+reset-to-a-previous-commit
 appendix-code-reviews-during-a-pull-request
 appendix-github-issues
 appendix-getting-git-and-github-on-your-computer
