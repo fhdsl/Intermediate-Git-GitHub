@@ -4,19 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Workshop Notes | Collaborative Git and GitHub</title>
+  <title>Chapter 1 Workshop Notes | Intermediate Git and GitHub</title>
   <meta name="description" content="Description about Course/Book." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.41 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Workshop Notes | Collaborative Git and GitHub" />
+  <meta property="og:title" content="Chapter 1 Workshop Notes | Intermediate Git and GitHub" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Description about Course/Book." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Workshop Notes | Collaborative Git and GitHub" />
+  <meta name="twitter:title" content="Chapter 1 Workshop Notes | Intermediate Git and GitHub" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -31,7 +30,6 @@
   <link rel="shortcut icon" href="assets/dasl_favicon.ico" type="image/x-icon" />
 <link rel="prev" href="index.html"/>
 <link rel="next" href="about-the-authors.html"/>
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -49,11 +47,16 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="assets/style.css" type="text/css" />
 </head>
@@ -71,43 +74,29 @@
 <a href="https://hutchdatascience.org/" target="_blank"><img src="assets/big-dasl-stacked.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Learning Objectives</a>
 <ul>
 <li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#target-audience"><i class="fa fa-check"></i><b>0.1</b> Target Audience</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="workshop-notes.html"><a href="workshop-notes.html"><i class="fa fa-check"></i><b>1</b> Workshop Notes</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="workshop-notes.html"><a href="workshop-notes.html#review-intro-to-git-material"><i class="fa fa-check"></i><b>1.1</b> Review Intro to Git material</a></li>
-<li class="chapter" data-level="1.2" data-path="workshop-notes.html"><a href="workshop-notes.html#intro-to-branching-and-merging"><i class="fa fa-check"></i><b>1.2</b> Intro to Branching and Merging</a></li>
-<li class="chapter" data-level="1.3" data-path="workshop-notes.html"><a href="workshop-notes.html#set-up"><i class="fa fa-check"></i><b>1.3</b> Set up</a>
+<li class="chapter" data-level="1.1" data-path="workshop-notes.html"><a href="workshop-notes.html#review-of-intro-to-git"><i class="fa fa-check"></i><b>1.1</b> Review of Intro to Git</a></li>
+<li class="chapter" data-level="1.2" data-path="workshop-notes.html"><a href="workshop-notes.html#set-up"><i class="fa fa-check"></i><b>1.2</b> Set-up</a>
 <ul>
-<li class="chapter" data-level="1.3.1" data-path="workshop-notes.html"><a href="workshop-notes.html#installing-git"><i class="fa fa-check"></i><b>1.3.1</b> Installing Git</a></li>
-<li class="chapter" data-level="1.3.2" data-path="workshop-notes.html"><a href="workshop-notes.html#installing-github-command-line-tools"><i class="fa fa-check"></i><b>1.3.2</b> Installing GitHub Command Line Tools</a></li>
-<li class="chapter" data-level="1.3.3" data-path="workshop-notes.html"><a href="workshop-notes.html#create-a-github-account"><i class="fa fa-check"></i><b>1.3.3</b> Create a GitHub account</a></li>
-<li class="chapter" data-level="1.3.4" data-path="workshop-notes.html"><a href="workshop-notes.html#adding-your-information-for-git"><i class="fa fa-check"></i><b>1.3.4</b> Adding your information for Git</a></li>
-<li class="chapter" data-level="1.3.5" data-path="workshop-notes.html"><a href="workshop-notes.html#connecting-git-to-your-github-account"><i class="fa fa-check"></i><b>1.3.5</b> Connecting Git to your GitHub account</a></li>
-<li class="chapter" data-level="1.3.6" data-path="workshop-notes.html"><a href="workshop-notes.html#optional-change-text-editor"><i class="fa fa-check"></i><b>1.3.6</b> Optional: change text editor</a></li>
+<li class="chapter" data-level="1.2.1" data-path="workshop-notes.html"><a href="workshop-notes.html#setting-up-the-command-line-to-connect-with-github"><i class="fa fa-check"></i><b>1.2.1</b> Setting up the command line to connect with GitHub</a></li>
+<li class="chapter" data-level="1.2.2" data-path="workshop-notes.html"><a href="workshop-notes.html#setting-up-a-new-repository"><i class="fa fa-check"></i><b>1.2.2</b> Setting up a new repository</a></li>
 </ul></li>
-<li class="chapter" data-level="1.4" data-path="workshop-notes.html"><a href="workshop-notes.html#branching"><i class="fa fa-check"></i><b>1.4</b> Branching</a></li>
-<li class="chapter" data-level="1.5" data-path="workshop-notes.html"><a href="workshop-notes.html#merging"><i class="fa fa-check"></i><b>1.5</b> Merging</a>
+<li class="chapter" data-level="1.3" data-path="workshop-notes.html"><a href="workshop-notes.html#making-commits"><i class="fa fa-check"></i><b>1.3</b> Making commits</a></li>
+<li class="chapter" data-level="1.4" data-path="workshop-notes.html"><a href="workshop-notes.html#pushing-to-github"><i class="fa fa-check"></i><b>1.4</b> Pushing to GitHub</a></li>
+<li class="chapter" data-level="1.5" data-path="workshop-notes.html"><a href="workshop-notes.html#branching"><i class="fa fa-check"></i><b>1.5</b> Branching</a></li>
+<li class="chapter" data-level="1.6" data-path="workshop-notes.html"><a href="workshop-notes.html#merging-and-pull-requests"><i class="fa fa-check"></i><b>1.6</b> Merging and Pull Requests</a>
 <ul>
-<li class="chapter" data-level="1.5.1" data-path="workshop-notes.html"><a href="workshop-notes.html#deleting-branches"><i class="fa fa-check"></i><b>1.5.1</b> Deleting branches</a></li>
-<li class="chapter" data-level="1.5.2" data-path="workshop-notes.html"><a href="workshop-notes.html#merge-conflicts"><i class="fa fa-check"></i><b>1.5.2</b> Merge conflicts</a></li>
+<li class="chapter" data-level="1.6.1" data-path="workshop-notes.html"><a href="workshop-notes.html#merge-conflicts-during-pull-requests"><i class="fa fa-check"></i><b>1.6.1</b> Merge conflicts during pull requests</a></li>
 </ul></li>
-<li class="chapter" data-level="1.6" data-path="workshop-notes.html"><a href="workshop-notes.html#pull-requests"><i class="fa fa-check"></i><b>1.6</b> Pull requests</a>
-<ul>
-<li class="chapter" data-level="1.6.1" data-path="workshop-notes.html"><a href="workshop-notes.html#connect-to-course-github-repository"><i class="fa fa-check"></i><b>1.6.1</b> Connect to course GitHub repository</a></li>
-<li class="chapter" data-level="1.6.2" data-path="workshop-notes.html"><a href="workshop-notes.html#branching-with-remotes"><i class="fa fa-check"></i><b>1.6.2</b> Branching with remotes</a></li>
-<li class="chapter" data-level="1.6.3" data-path="workshop-notes.html"><a href="workshop-notes.html#pull-requests-1"><i class="fa fa-check"></i><b>1.6.3</b> Pull Requests</a></li>
-<li class="chapter" data-level="1.6.4" data-path="workshop-notes.html"><a href="workshop-notes.html#merge-conflicts-during-pull-requests"><i class="fa fa-check"></i><b>1.6.4</b> Merge conflicts during pull requests</a></li>
-<li class="chapter" data-level="1.6.5" data-path="workshop-notes.html"><a href="workshop-notes.html#code-reviews-during-a-pull-request"><i class="fa fa-check"></i><b>1.6.5</b> Code reviews during a pull request</a></li>
-</ul></li>
-<li class="chapter" data-level="1.7" data-path="workshop-notes.html"><a href="workshop-notes.html#github-issues"><i class="fa fa-check"></i><b>1.7</b> GitHub issues</a></li>
-<li class="chapter" data-level="1.8" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-local-and-remote-as-branches"><i class="fa fa-check"></i><b>1.8</b> Appendix: Local and remote as branches</a>
-<ul>
-<li class="chapter" data-level="1.8.1" data-path="workshop-notes.html"><a href="workshop-notes.html#local-and-remote-branches-in-action"><i class="fa fa-check"></i><b>1.8.1</b> Local and remote branches in action</a></li>
-</ul></li>
-<li class="chapter" data-level="1.9" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-references"><i class="fa fa-check"></i><b>1.9</b> Appendix: References</a></li>
+<li class="chapter" data-level="1.7" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-code-reviews-during-a-pull-request"><i class="fa fa-check"></i><b>1.7</b> Appendix: Code reviews during a pull request</a></li>
+<li class="chapter" data-level="1.8" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-github-issues"><i class="fa fa-check"></i><b>1.8</b> Appendix: GitHub issues</a></li>
+<li class="chapter" data-level="1.9" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-getting-git-and-github-on-your-computer"><i class="fa fa-check"></i><b>1.9</b> Appendix: Getting Git and GitHub on your computer</a></li>
+<li class="chapter" data-level="1.10" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-references"><i class="fa fa-check"></i><b>1.10</b> Appendix: References</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="2" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>2</b> References</a></li>
@@ -125,7 +114,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Collaborative Git and GitHub</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Intermediate Git and GitHub</a>
           </h1>
         </div>
 
@@ -145,35 +134,20 @@
 <div class="hero-image-container"> 
   <img class= "hero-image" src="assets/dasl_thin_main_image.png">
 </div>
-<div id="workshop-notes" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Workshop Notes</h1>
-<div id="review-intro-to-git-material" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Review Intro to Git material</h2>
-<p>During the Intro to Git workshop, we summarized Git in two mental models. The <em>first model</em> is the idea of making sequential commits to save your work’s history with a metadata, as shown below.</p>
-<div class="figure">
-<img src="https://git-scm.com/book/en/v2/images/snapshots.png" alt="" />
-<p class="caption">Git model with a linear history. (Source: ProGit)</p>
+<div id="workshop-notes" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Workshop Notes<a href="workshop-notes.html#workshop-notes" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="review-of-intro-to-git" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Review of Intro to Git<a href="workshop-notes.html#review-of-intro-to-git" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>During the Intro to Git workshop, discussed the Git Data Model. Git keeps track of a project within a designated directory, which is called a <strong>repository</strong> (also known as <strong>repo</strong>). You can save the state of your repository by making a <strong>commit</strong>: Git will save the repository’s directory tree, a link to the previous commit, and metadata.</p>
+<p>This process is illustrated below:</p>
+<div class="float">
+<img src="https://git-scm.com/book/en/v2/images/snapshots.png" alt="Git model with a linear history. (Source: ProGit)" />
+<div class="figcaption">Git model with a linear history. (Source: ProGit)</div>
 </div>
 <p>This can also be illustrated with symbols below:</p>
 <pre><code>o &lt;-- o &lt;-- o &lt;-- o</code></pre>
 <p>where each <code>o</code> is a commit of the repository’s state.</p>
-<p>The <em>second model</em> zooms in and focuses on the state of a file:</p>
-<p><img src="images/git_workflow2.svg" /></p>
-<p>Given a new, Untracked file in your repository, you can add it to your repository via <code>git add</code>. This sets your file to the Staged state. Then, to make a commit, you use <code>git commit</code>.</p>
-<p>With new <em>edits</em>, the file becomes a Modified stage. You can then stage the file again via <code>git add</code>, and then make another commit via <code>git commit</code>. This cycle repeats in your local repository.</p>
-<p>When you want to share your repository to a remote, such as GitHub, you use <code>git push</code>. If you have any collaborators also pushing to the repository and you want to see their updates, you use <code>git pull</code> to get the remote changes to your local repository.</p>
-<p>In summary, here are the file states:</p>
-<ul>
-<li><p><strong>Untracked</strong> means that your file is in the local repository file directory, but is not being tracked by Git.</p></li>
-<li><p><strong>Modified</strong> means that you have changed the file but have not committed it to your local repository yet.</p></li>
-<li><p><strong>Staged</strong> means that you have marked a modified file in its current version to go into your next commit.</p></li>
-<li><p><strong>Committed</strong> means that the data is safely stored in your local repository.</p></li>
-<li><p><strong>Pushed</strong> means that the your changes have been made to the remote (ie. GitHub).</p></li>
-</ul>
-</div>
-<div id="intro-to-branching-and-merging" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Intro to Branching and Merging</h2>
-<p>Today, we are going to think about how multiple people can collaborate on a Git repository. How can we keep track of multiple people’s work clearly and transparently without stepping on each others’ toes?</p>
+<p>This basic Git Data Model is great when you are working on a project by yourself, but when you start collaborating with others, your project development may become more complicated. How can we keep track of multiple people’s work clearly and transparently without stepping on each others’ toes?</p>
 <p>Suppose we start a project in a linear commit structure, as before:</p>
 <pre><code>o &lt;-- o &lt;-- o &lt;-- o</code></pre>
 <p>Suppose that another collaborator joins in and wants to develop a separate feature, while you continue on the project. It is possible to create a <strong>branch</strong> structure, in a situation where two separate features of the project are being made in parallel:</p>
@@ -188,205 +162,119 @@
               --- o &lt;-- o</code></pre>
 <p>This process in Git is called <strong>branching</strong>, when two branching commit paths are created, and <strong>merging</strong>, when two branches are integrated together.</p>
 <p>This branch and merge workflow can be used for collaborative projects, but can also be useful for a single user. A project maintained by one developer may branch out into various working ideas, and this branch and merge workflow keeps track of that nicely.</p>
-<p>We will first see how to do this in Git for a single user, then see how it can be done collaboratively with GitHub.</p>
 </div>
-<div id="set-up" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Set up</h2>
-<div id="installing-git" class="section level3" number="1.3.1">
-<h3><span class="header-section-number">1.3.1</span> Installing Git</h3>
-<p>If you are learning via replit, then Git is already installed. See this guide for <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">installation info</a> on your local computer.</p>
-</div>
-<div id="installing-github-command-line-tools" class="section level3" number="1.3.2">
-<h3><span class="header-section-number">1.3.2</span> Installing GitHub Command Line Tools</h3>
-<p>If you are learning via replit, then GitHub Command Line Tools is already installed. See this website for <a href="https://cli.github.com/">installation info</a> on your local computer. This tool connects your local repository to your GitHub repository.</p>
-</div>
-<div id="create-a-github-account" class="section level3" number="1.3.3">
-<h3><span class="header-section-number">1.3.3</span> Create a GitHub account</h3>
-<p>Create your GitHub account <a href="https://github.com/login">here</a>.</p>
-</div>
-<div id="adding-your-information-for-git" class="section level3" number="1.3.4">
-<h3><span class="header-section-number">1.3.4</span> Adding your information for Git</h3>
-<p>This helps Git record your author information when you make commits:</p>
-<pre><code>% git config --global user.name &quot;Your Name&quot;
-% git config --global user.email &quot;address@email.com&quot;</code></pre>
-<p>Replace <code>Your Name</code> with your name and <code>address@email.com</code> with your email address.</p>
-</div>
-<div id="connecting-git-to-your-github-account" class="section level3" number="1.3.5">
-<h3><span class="header-section-number">1.3.5</span> Connecting Git to your GitHub account</h3>
-<p>We connect Git to your GitHub account via GitHub CLI:</p>
-<pre><code>% gh auth login</code></pre>
-<p>You will be asked how you want to log in, and pick the following:</p>
+<div id="set-up" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Set-up<a href="workshop-notes.html#set-up" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="setting-up-the-command-line-to-connect-with-github" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Setting up the command line to connect with GitHub<a href="workshop-notes.html#setting-up-the-command-line-to-connect-with-github" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For this workshop, we practice interacting with Git and GitHub using the Command Line. Because everyone’s computer is different, we practice using Posit Cloud, which has an online Command Line interface. You should sign up and login, and then access this <a href="https://posit.cloud/content/7843782">Posit Cloud workspace</a>. Open up <code>workshop.qmd</code> via the file browser on the bottom right corner. Then, on the bottom panel, click on the “Terminal” tab. This will be the Command Line we will be using today.</p>
+<p>Copy and paste the following commands into the “Terminal” tab, pressing enter after each command:</p>
+<pre><code>curl -sS https://webi.sh/gh | sh</code></pre>
+<pre><code>git config --global user.email &quot;you@example.com&quot;
+git config --global user.name &quot;username&quot;
+gh auth login</code></pre>
+<p>You will then several questions, and here is how you should respond:</p>
 <pre><code>? What account do you want to log into? GitHub.com
 ? What is your preferred protocol for Git operations? HTTPS
 ? Authenticate Git with your GitHub credentials? Yes
 ? How would you like to authenticate GitHub CLI? Login with a web browser</code></pre>
 <p>You will be given a code, and you will provide that code to GitHub via <a href="https://github.com/login/device" class="uri">https://github.com/login/device</a>.</p>
+<p>You should accept the permissions GitHub asks you to grant, and when this is complete, you will be connected to GitHub!</p>
 </div>
-<div id="optional-change-text-editor" class="section level3" number="1.3.6">
-<h3><span class="header-section-number">1.3.6</span> Optional: change text editor</h3>
-<p>We will tell Git what text editor to use to create commit messages. If you are new to command line text editors, <code>nano</code> is a simple one to learn. Other common ones are <code>vim</code> and <code>emacs</code>.</p>
-<pre><code>% git config --global core.editor &quot;nano&quot;</code></pre>
+<div id="setting-up-a-new-repository" class="section level3 hasAnchor" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Setting up a new repository<a href="workshop-notes.html#setting-up-a-new-repository" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Go to: <a href="https://github.com/new" class="uri">https://github.com/new</a>.</p>
+<p>Give it a repo name, set it to public, create a README.</p>
+<p>Find the clone URL by clicking on “Code”, and copy the address (in this image, it is <a href="https://github.com/caalo/practice.git"><code>https://github.com/caalo/practice.git</code></a>, but it will differ for you.)</p>
+<p><img src="images/git_clone.png" /></p>
+<p>Return to Posit Cloud’s Terminal. Let’s bring the GitHub repository locally on to Posit Cloud:</p>
+<pre><code>git clone your_clone_URL</code></pre>
+<p>where <code>your_clone_URL</code> is the address you just copied.</p>
+<p>And then look into that directory:</p>
+<pre><code>cd your_repo_name</code></pre>
+<p>Now you are ready to start making local commits!</p>
 </div>
 </div>
-<div id="branching" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Branching</h2>
-<p>Let’s create a local repository to practice branching:</p>
-<pre><code>% mkdir sandbox
-% cd sandbox
-% git init
-% touch README
-% git add README
-% git commit -m &quot;Added README&quot;</code></pre>
-<p>Let’s look at the branches in this repository:</p>
-<pre><code>% git branch
-* main</code></pre>
-<p>The star <code>*</code> shows which branch we are looking at.</p>
-<p>We are on the <code>main</code> branch in this repository, as expected.</p>
-<p>Let’s create a new branch:</p>
-<pre><code>% git branch development
-% git branch
-  development
-* main</code></pre>
-<p>Another way to look at which branch we are on is via <code>git log</code>:</p>
-<pre><code>% git log
-commit 657fcbea5a023041d359a8f1fcfc9fbf7e64f68e (HEAD -&gt; main, development)
-Merge: 875d774 413b490
-Author: Your Name &lt;you@example.com&gt;
-Date:   Wed Dec 6 23:47:39 2023 +0000
+<div id="making-commits" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Making commits<a href="workshop-notes.html#making-commits" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Let’s run <code>git status</code> to understand the current state of this repository.</p>
+<pre><code>git status
+On branch main
+Your branch is up to date with &#39;origin/main&#39;.
 
-   Initial commit</code></pre>
-<p>The <code>HEAD</code> <strong>pointer</strong> tells us “What am I looking at?” in our local file system. If we want to look at other branches, then we need to move the <code>HEAD</code> pointer to that branch. Currently, we are looking at the <code>main</code> branch in our local file system.</p>
-<p>Let’s work on the <code>development</code> branch and make a commit. We use the command <code>git checkout</code> to switch to a different branch:</p>
-<pre><code>% git checkout development
-Switched to branch &#39;development&#39;
-% echo &quot;Additional README info&quot; &gt;&gt; README.md 
-% git add README.md 
-% git commit -m &quot;updated README&quot;</code></pre>
-<p>Let’s look at our <code>git log</code>:</p>
-<pre><code>% git log
-commit 260c8099f0ea82199805325a6fbe26bfc3cbd1aa (HEAD -&gt; development)
-Author: Your Name &lt;you@example.com&gt;
-Date:   Thu Dec 7 00:14:02 2023 +0000
+nothing to commit, working tree clean</code></pre>
+<p>We will update files in this repository, and make our first commit. We will update a file, and commit it to our repository. Before we do so, we have some more concepts to unpack.</p>
+<p>In addition to the Git Data Model, there is a Staging Model to keep in mind when trying to make commits. In the simplest version control system, one could imagine a commit command that takes a snapshot of the repository’s directory and stores it as the commit. In Git, there is an intermediate <strong>staged</strong> state so that you can selective decide which files from your repository should be in the commit.</p>
+<p>Why offer this intermediate staging ground? Perhaps, in a rush, you implemented two modular changes to your code in two different files, respectively. You want to make two separate commits, one for each change, so you stage one file, commit that one file, and then stage the second file, and then commit that second file. Or perhaps, during your analysis, you generated a bunch of temporary files that isn’t necessary for the software to run, so you don’t stage these temporary files to commit. Or perhaps, <em>you have sensitive PHI data in your repository’s directory and should not commit it</em>.</p>
+<p>Once Git <strong>tracks</strong> your file, Git has three main states that your files can reside in: <strong>modified</strong>, <strong>staged</strong>, and <strong>committed</strong>:</p>
+<ul>
+<li><p><strong>Modified</strong> means that you have changed the file but have not committed it to your local repository yet.</p></li>
+<li><p><strong>Staged</strong> means that you have marked a modified file in its current version to go into your next commit.</p></li>
+<li><p><strong>Committed</strong> means that the data is safely stored in your local repository.</p></li>
+</ul>
+<p>This can be summarized in the following diagram:</p>
+<p><img src="images/git_workflow1.svg" /></p>
+<p>Let’s try this out:</p>
+<p>Using the file browser, open up <code>README.md</code> and modify it, adding some text to it. Save it. (If you do not have a <code>README.md</code> file, you can create a custom text file via File -&gt; New File -&gt; Text File)</p>
+<pre><code>git status
 
-    updated README
+On branch main
+Your branch is ahead of &#39;origin/main&#39; by 1 commit.
+  (use &quot;git push&quot; to publish your local commits)
 
-commit 657fcbea5a023041d359a8f1fcfc9fbf7e64f68e (main)
-Merge: 875d774 413b490
-Author: Your Name &lt;you@example.com&gt;
-Date:   Wed Dec 6 23:47:39 2023 +0000
+Modified files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+    README.md
 
-    Initial commit</code></pre>
-<p>Now, our branch <code>development</code> is ahead of the <code>main</code> branch by one commit. We can toggle between two branches via <code>git checkout</code> as before.</p>
-<p>Let’s create a third branch, called <code>quickFix</code>, and make a commit, and look at the log. Notice that when we make a new branch, it is branching <em>relatively</em> to the branch that is checked out. For this example, we want to branch <em>relatively</em> to <code>main</code>, so we check out the <code>main</code> branch before creating <code>quickFix</code></p>
-<pre><code>% git checkout main
-Switched to &#39;main&#39;
-% git branch quickFix
-% echo &quot;quick fix!&quot; &gt;&gt; quickFix.txt
-% git add quickFix.txt 
-% git commit -m &quot;add quickFix.txt&quot;
-% git log --graph --all
-* commit b6c97d0a1e7249da9d5a590534b57dd17754b5b8 (HEAD -&gt; quickFix)
-| Author: Your Name &lt;you@example.com&gt;
-| Date:   Thu Dec 7 00:40:25 2023 +0000
-| 
-|     add quickFix.txt
-|   
-| * commit 260c8099f0ea82199805325a6fbe26bfc3cbd1aa (development)
-|/  Author: Your Name &lt;you@example.com&gt;
-|   Date:   Thu Dec 7 00:14:02 2023 +0000
-|   
-|       updated README
-|   
-*   commit 657fcbea5a023041d359a8f1fcfc9fbf7e64f68e (main)
-|   Merge: 875d774 413b490
-|   Author: Your Name &lt;you@example.com&gt;
-|   Date:   Wed Dec 6 23:47:39 2023 +0000
-|   
-|       Initial commit</code></pre>
-<p>Here, we used <code>git log --graph --all</code> so that it can display the branching structure graphically.</p>
-<p>Essentially, we have created this structure:</p>
-<pre><code>o &lt;-- o &lt;-- o &lt;-- o
-            ^
-             \
-              --- o </code></pre>
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)</code></pre>
+<p>Let’s stage it:</p>
+<pre><code>git add README.md</code></pre>
+<p>Check the status again:</p>
+<pre><code>git status
+On branch main
+Your branch is ahead of &#39;origin/main&#39; by 1 commit.
+  (use &quot;git push&quot; to publish your local commits)
+
+Changes to be committed:
+  (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
+    new file: README.md</code></pre>
+<p>The file is staged and ready to be committed.</p>
+<pre><code>git commit -m &quot;your commit message&quot;</code></pre>
+<p>where you can decide what your message is.</p>
+<p>You should practice making a few more commits to get familiar with this!</p>
 </div>
-<div id="merging" class="section level2" number="1.5">
-<h2><span class="header-section-number">1.5</span> Merging</h2>
-<p>Great! Now we have developed two features from our <code>main</code> branch, and we should merge <code>development</code> and <code>quickFix</code> back to the <code>main</code> branch, sequentially.</p>
-<p>All you have to do is checkout the branch you wish to merge into and then run <code>git merge [branchName]</code> on the branch of interest:</p>
-<pre><code>% git checkout main
-Switched to branch &#39;main&#39;
-% git merge development 
-Merge branch &#39;main&#39; of https://github.com/fhdsl/S2_Collaborative_Git_GitHub_Student_Practice
-Updating 657fcbe..260c809
-Fast-forward
-% git log --all --graph
-* commit b6c97d0a1e7249da9d5a590534b57dd17754b5b8 (quickFix)
-| Author: Your Name &lt;you@example.com&gt;
-| Date:   Thu Dec 7 00:40:25 2023 +0000
-| 
-|     add quickFix.txt
-|   
-| * commit 260c8099f0ea82199805325a6fbe26bfc3cbd1aa (HEAD -&gt; main, development)
-|/  Author: Your Name &lt;you@example.com&gt;
-|   Date:   Thu Dec 7 00:14:02 2023 +0000
-|   
-|       updated README
-|   </code></pre>
-<p>Great, you have completed one of the merges. Let’s do the second merge.</p>
-<pre><code>% git merge quickFix
-Merge made by the &#39;ort&#39; strategy.
- quickFix.txt | 1 +
- 1 file changed, 1 insertion(+)
- create mode 100644 quickFix.txt
-~/project/S2_Collaborative_Git_GitHub_Student_Practice$ git log --all --graph
-*   commit e05111a537b6f9c5dd11b15f0fc28feb27940fcf (HEAD -&gt; main)
-|\  Merge: 260c809 b6c97d0
-| | Author: Your Name &lt;you@example.com&gt;
-| | Date:   Fri Dec 8 18:59:45 2023 +0000
-| | 
-| |     Merge branch &#39;quickFix&#39;
-| |     
-| | 
-| * commit b6c97d0a1e7249da9d5a590534b57dd17754b5b8 (quickFix)
-| | Author: Your Name &lt;you@example.com&gt;
-| | Date:   Thu Dec 7 00:40:25 2023 +0000
-| | 
-| |     add quickFix.txt
-| | 
-* | commit 260c8099f0ea82199805325a6fbe26bfc3cbd1aa (development)
-|/  Author: Your Name &lt;you@example.com&gt;
-|   Date:   Thu Dec 7 00:14:02 2023 +0000
-|   
-|       updated README
-|   </code></pre>
-<p>In the process, you had to make a merge commit, because your development history has branched and Git needs to consider the two divergent branches as well as the common ancestor to make the merge happen.</p>
-<div id="deleting-branches" class="section level3" number="1.5.1">
-<h3><span class="header-section-number">1.5.1</span> Deleting branches</h3>
-<p>You can now delete this branch, if you like.</p>
-<pre><code>% git branch -d development
-% git branch -d quickFix</code></pre>
+<div id="pushing-to-github" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Pushing to GitHub<a href="workshop-notes.html#pushing-to-github" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once you are comfortable with commits, you can update your repository back to GitHub. When you want to share your repository to a remote, such as GitHub, you use <code>git push</code>. If you have any collaborators also pushing to the same repository and you want to see their updates, you use <code>git pull</code> to get the remote changes to your local repository.</p>
+<p>Let’s update our Git Data Model with push:</p>
+<ul>
+<li><p><strong>Untracked</strong> means that your file is in the local repository file directory, but is not being tracked by Git.</p></li>
+<li><p><strong>Modified</strong> means that you have changed the file but have not committed it to your local repository yet.</p></li>
+<li><p><strong>Staged</strong> means that you have marked a modified file in its current version to go into your next commit.</p></li>
+<li><p><strong>Committed</strong> means that the data is safely stored in your local repository.</p></li>
+<li><p><strong>Pushed</strong> means that the your changes have been made to the remote (ie. GitHub).</p></li>
+</ul>
+<p>Our diagram, updated:</p>
+<p><img src="images/git_workflow2.svg" /></p>
+<p>Let’s run it:</p>
+<pre><code>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/fhdsl/Collaborative_Git_GitHub_Student_Practice.git
+   6e97634..0c82b47  main -&gt; main</code></pre>
+<p>If you refresh your GitHub repository, you should see the changes!</p>
 </div>
-<div id="merge-conflicts" class="section level3" number="1.5.2">
-<h3><span class="header-section-number">1.5.2</span> Merge conflicts</h3>
-<p>Sometimes, when merging branches together, there will be changes that will be in conflicts with each other. Git will stop the merging process and ask you to fix these conflicts before allowing you to complete the merge. Here is a nice <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line">guide</a> that explains the process.</p>
-</div>
-</div>
-<div id="pull-requests" class="section level2" number="1.6">
-<h2><span class="header-section-number">1.6</span> Pull requests</h2>
-<p>What we have learned so far about branching and merging has been on the local repository. This is great for individual work. To let multiple people branch and merge, we will learn how to do it with a remote repository on GitHub via the <strong>pull request model</strong>.</p>
-<div id="connect-to-course-github-repository" class="section level3" number="1.6.1">
-<h3><span class="header-section-number">1.6.1</span> Connect to course GitHub repository</h3>
-<p>If you are enrolled in the course, we will add you to <a href="https://github.com/fhdsl/S2_Collaborative_Git_GitHub_Student_Practice.git">this repository</a>.</p>
-<p>Then, clone the remote repository in your local environment:</p>
-<pre><code>% git clone https://github.com/fhdsl/S2_Collaborative_Git_GitHub_Student_Practice.git</code></pre>
-<p>The <strong>pull request model</strong> is a framework of branching and merging with collaborators on GitHub. The working model is essentially identical of what we have done already: you create a branch for your own work, make some commits, and merge it back to the main branch. The process of merging a branch back to the main branch on GitHub is called a <strong>pull request</strong>, which is the same as <code>git merge</code> but with more documentation and approval.</p>
-</div>
-<div id="branching-with-remotes" class="section level3" number="1.6.2">
-<h3><span class="header-section-number">1.6.2</span> Branching with remotes</h3>
-<p>To create a new branch on your remote, you can use the GitHub website:</p>
+<div id="branching" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Branching<a href="workshop-notes.html#branching" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now we think about collaborative work, in which we create branches to isolate our own work before merging it back to the main branch.</p>
+<p>We first create a branch, called <code>clo2_development</code>, on our remote repository. You can subsitute “clo2_development” with your own identifier.</p>
 <p><img src="images/git_branch.png" /></p>
-<p>The branch <code>clo2_development</code> is created on the remote, but it hasn’t been updated locally. We run <code>git pull</code> locally to update it and switch to that branch via <code>git checkout</code>.</p>
+<p>The branch <code>clo2_development</code> is created on the GitHub remote, but it hasn’t been updated locally. We run <code>git pull</code> locally to update it.</p>
 <pre><code>% git pull
 From https://github.com/fhdsl/S2_Collaborative_Git_GitHub_Student_Practice
  * [new branch]      clo2_development -&gt; origin/clo2_development
@@ -395,31 +283,36 @@ Already up to date.
 % git checkout clo2_development
 Branch &#39;clo2_development&#39; set up to track remote branch &#39;clo2_development&#39; from &#39;origin&#39;.
 Switched to a new branch &#39;clo2_development&#39;</code></pre>
-<p>Then, we can make some new commits and pushes to this branch:</p>
-<pre><code>% echo &quot;branch edits&quot; &gt;&gt; README.md
-% git add README.md
-% git commit -m &quot;edited README.md&quot;
-% git push</code></pre>
-<p>After a variable number of commits and pushes, your remote branch is a different version of the remote main branch with new improvements. But our main goal is to add those improvements to the main remote branch. To start this process of bringing in new changes, we will create a <strong>pull request</strong>.</p>
+<p>Now, switch to that branch via <code>git checkout clo2_developmenet</code>.</p>
+<pre><code>% git checkout clo2_development
+Branch &#39;clo2_development&#39; set up to track remote branch &#39;clo2_development&#39; from &#39;origin&#39;.</code></pre>
+<p>We can use <code>git checkout main</code> to look switch back to our main branch.</p>
+<p>We can also use <code>git branch</code> to see the branches on a repository.</p>
+<p>Now, we will make changes to the branch: let’s create a file that is unique to you. You can create a new file via File -&gt; New File -&gt; Text File, and save it after you write something. Let’s add, commit, and push this new file within our branch.</p>
+<pre><code>git add new_file.txt
+git commit -m &quot;Created new_file.txt&quot;
+git push</code></pre>
+<p>Now, your remote branch is a different version of the remote main branch with new improvements, both locally and on GitHub!</p>
 </div>
-<div id="pull-requests-1" class="section level3" number="1.6.3">
-<h3><span class="header-section-number">1.6.3</span> Pull Requests</h3>
-<p>A <strong>pull request</strong> is a way to propose changes from a branch before it is merged back into the main repository. It is just like <code>git merge</code>, but it requires more documentation and confirmation. For instance, a collaborator can create their own work on a branch, and then create a pull request to have that new branch’s feature to be integrated back to the main branch. The owner of the repository sometimes review the proposed changes before accepting the pull request.</p>
-<p><img src="images/git_PR_illustration.png" /></p>
-<p>When you have pushed changes to the branch, you will see an option to <em>“Compare &amp; pull request”</em>. Click on it.</p>
+<div id="merging-and-pull-requests" class="section level2 hasAnchor" number="1.6">
+<h2><span class="header-section-number">1.6</span> Merging and Pull Requests<a href="workshop-notes.html#merging-and-pull-requests" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Eventually our goal is to merge these improvements back to the main branch. To start this process of bringing in new changes, we will create a <strong>pull request</strong>.</p>
+<p>When you have pushed changes to the branch, you will see an option to <em>“Compare &amp; pull request”</em> on the GitHub website. Click on it. (If it is not there, click on Pull Requests -&gt; New Pull Request.)</p>
 <p><img src="images/git_PR1.png" /></p>
+<p>A <strong>pull request</strong> is a way to propose changes from a branch before it is merged back into the main repository. For instance, a collaborator can create their own work on a branch, and then create a pull request to have that new branch’s feature to be integrated back to the main branch. The owner of the repository sometimes review the proposed changes before accepting the pull request.</p>
 <p>You will see that you are trying to merge <code>clo2_development</code> into <code>main</code> on the remote. It also requires you to write a description of what you did on your branch.</p>
 <p><img src="images/git_PR2.png" /></p>
 <p>After you create the pull request, the author of the repository gets to decide whether a merge should be done on the pull request. Here, you are a contributing author of the repository, so you can approve it yourself. But you can imagine a situation where you need someone else to approve of the pull request: a dialogue can take place in this approval process, leading to additional commits to be made before the pull request is approved.</p>
 <p><img src="images/git_PR3.png" /></p>
 <p>Click <em>“Merge pull request”</em> to finish!</p>
+<p>You should be able to see the new file in the <code>main</code> branch now.</p>
+<div id="merge-conflicts-during-pull-requests" class="section level3 hasAnchor" number="1.6.1">
+<h3><span class="header-section-number">1.6.1</span> Merge conflicts during pull requests<a href="workshop-notes.html#merge-conflicts-during-pull-requests" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Sometimes, when merging branches together during a pull request, there will be changes that will be in conflicts with each other. GitHub will stop the process and ask you fix it. A nice guide to this can be found <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">here</a>.</p>
 </div>
-<div id="merge-conflicts-during-pull-requests" class="section level3" number="1.6.4">
-<h3><span class="header-section-number">1.6.4</span> Merge conflicts during pull requests</h3>
-<p>Sometimes, when merging branches together during a pull request, there will be changes that will be in conflicts with each other. Again, GitHub will stop the process and ask you fix it. A nice guide to this can be found <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">here</a>.</p>
 </div>
-<div id="code-reviews-during-a-pull-request" class="section level3" number="1.6.5">
-<h3><span class="header-section-number">1.6.5</span> Code reviews during a pull request</h3>
+<div id="appendix-code-reviews-during-a-pull-request" class="section level2 hasAnchor" number="1.7">
+<h2><span class="header-section-number">1.7</span> Appendix: Code reviews during a pull request<a href="workshop-notes.html#appendix-code-reviews-during-a-pull-request" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Suppose that you want someone’s approval of your pull request before it is merged. You can add other users in the repository to be a reviewer of your work. This process of code reviewing before a branch is merged is highly recommended in collaborative work.</p>
 <p>Some advice for a creating helpful pull requests for reviewers:</p>
 <ul>
@@ -436,50 +329,26 @@ Switched to a new branch &#39;clo2_development&#39;</code></pre>
 </ul>
 <p>More advice on code review can be found here for <a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-an-author.html">pull request authors</a>, and <a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-a-reviewer.html">pull request reviewers</a>.</p>
 </div>
-</div>
-<div id="github-issues" class="section level2" number="1.7">
-<h2><span class="header-section-number">1.7</span> GitHub issues</h2>
+<div id="appendix-github-issues" class="section level2 hasAnchor" number="1.8">
+<h2><span class="header-section-number">1.8</span> Appendix: GitHub issues<a href="workshop-notes.html#appendix-github-issues" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Another nice collaborative feature of GitHub is GitHub issues. GitHub issues are a way for people to give feedback on your repository.</p>
 <p>Here is a common scenario of using GitHub issues in the wild: you publish a piece of software on GitHub, and other users try it out. They are confused about how to run your code, because they are getting errors, so they return to the GitHub repository and post a GitHub issue documenting their error. You can then create a branch from this issue, make changes to your code to resolve the error, then use the pull request model to merge it back to the main branch! GitHub issues are also a common way to document to-do features you want to implement in the future.</p>
 <p><img src="images/git_issue.png" /></p>
 </div>
-<div id="appendix-local-and-remote-as-branches" class="section level2" number="1.8">
-<h2><span class="header-section-number">1.8</span> Appendix: Local and remote as branches</h2>
-<p>Remember that there are now two versions of our repository when we are connected to a remote: one is <strong>local</strong> on your computer, and one is <strong>remote</strong> on GitHub. Both of these versions are considered branches. One is the local <code>main</code> branch, and one is the remote <code>main</code> branch.</p>
-<p>Let’s see these two branches via <code>git log</code>:</p>
-<pre><code>% git log
-commit 52a77982a629429a2119b681352f2939b6e83cdc (HEAD -&gt; main, origin/main, origin/HEAD)
-Author: Chris Lo &lt;hidden@gmail.com&gt;
-Date:   Wed Dec 6 14:34:33 2023 -0800
-
-    Initial commit</code></pre>
-<p>The remote <code>main</code> branch is designated as <code>origin/main</code>. There is another <code>HEAD</code> pointer on the remote as <code>origin/HEAD</code>, which we will not cover in detail here, but here is some <a href="https://superuser.com/questions/1192865/git-what-does-an-extra-item-origin-head-mean">reference</a>.</p>
-<div id="local-and-remote-branches-in-action" class="section level3" number="1.8.1">
-<h3><span class="header-section-number">1.8.1</span> Local and remote branches in action</h3>
-<p>Let’s see our local and remote branches in action.</p>
-<p>Suppose we make some local changes and commits, but don’t push it to the remote immediately. What happens?</p>
-<pre><code>% echo &quot;Additional README info&quot; &gt;&gt; README.md 
-% git add README.md 
-% git commit -m &quot;updated README&quot;
-
-% git log
-commit 875d774f67ee877cd239a980bc73613470b61ee1 (HEAD -&gt; main)
-Author: Your Name &lt;you@example.com&gt;
-Date:   Wed Dec 6 23:25:16 2023 +0000
-
-    updated README
-
-commit 52a77982a629429a2119b681352f2939b6e83cdc (origin/main, origin/HEAD)
-Author: Chris Lo &lt;hidden@gmail.com&gt;
-Date:   Wed Dec 6 14:34:33 2023 -0800
-
-    Initial commit</code></pre>
-<p>We see that the local <code>main</code> branch is ahead of the remote <code>origin/main</code> branch.</p>
-<p>Each time we run <code>git push</code> or <code>git pull</code>, Git performs a <code>git merge</code> to sync <code>origin/main</code> to <code>main</code> (<code>git push</code>), or a performs a <code>git merge</code> to sync <code>main</code> to <code>origin/main</code> (<code>git pull</code>).</p>
+<div id="appendix-getting-git-and-github-on-your-computer" class="section level2 hasAnchor" number="1.9">
+<h2><span class="header-section-number">1.9</span> Appendix: Getting Git and GitHub on your computer<a href="workshop-notes.html#appendix-getting-git-and-github-on-your-computer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Downloading and installing Git: <a href="#id_0" title="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>
+<p>If you are on a Mac, you can also download and install Git via Developer Tools.</p>
+<p>To connect Git to GitHub, there are a few ways to do it:</p>
+<ul>
+<li><p>Via the command line: You can install a command line tool called GitHub Command Line Interface to help you connect to GitHub: <a href="#id_0" title="https://docs.github.com/en/github-cli/github-cli/quickstart">https://docs.github.com/en/github-cli/github-cli/quickstart.</a> This is how we did it in on Posit Cloud.</p></li>
+<li><p>Via the command line: you can create a <a href="https://www.youtube.com/watch?v=iLrywUfs7yU" title="https://www.youtube.com/watch?v=iLrywUfs7yU">personal access token to connect to GitHub</a>.</p></li>
+<li><p>Point and click: GitHub Desktop can be downloaded here: <a href="https://desktop.github.com/" class="uri">https://desktop.github.com/</a>. </p></li>
+<li><p>Point and click: you can connect to GitHub via RStudio (<a href="https://happygitwithr.com/rstudio-git-github" class="uri">https://happygitwithr.com/rstudio-git-github</a>) and VSCode (<a href="https://code.visualstudio.com/docs/sourcecontrol/overview" class="uri">https://code.visualstudio.com/docs/sourcecontrol/overview</a>).</p></li>
+</ul>
 </div>
-</div>
-<div id="appendix-references" class="section level2" number="1.9">
-<h2><span class="header-section-number">1.9</span> Appendix: References</h2>
+<div id="appendix-references" class="section level2 hasAnchor" number="1.10">
+<h2><span class="header-section-number">1.10</span> Appendix: References<a href="workshop-notes.html#appendix-references" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">ProGit</a>: We covered chapter 3 in this workshop.</p></li>
 <li><p><a href="https://dangitgit.com/">DangItGit</a>: Excellent starting point for common Git problems.</p></li>
