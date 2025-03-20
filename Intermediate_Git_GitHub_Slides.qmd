@@ -8,13 +8,25 @@ format:
 
 ## Intermediate Git and GitHub
 
+As you get settled...
+
+-   Did you put your GitHub username [in this spreadsheet](https://docs.google.com/spreadsheets/d/1Bu3mGtDcMpp42J8hnYSgRFfrbqWV_RchtYQX1DAyZnI/edit?gid=0#gid=0)?
+
+-   Accept GitHub repository invitation in email connected to GitHub account
+
+    -   <https://github.com/fhdsl/Intermediate_Git_GitHub_Student_Practice>
+
+-   Accept Posit Cloud invitation: [https://posit.cloud/spaces/622777/join?access_code=9opYcuGRx2Th8sy2SUpZ0gXRa-BSvhTTlnyd_xhm](https://posit.cloud/spaces/622777/join?access_code=9opYcuGRx2Th8sy2SUpZ0gXRa-BSvhTTlnyd_xhmhttps://posit.cloud/spaces/622777/join?access_code=9opYcuGRx2Th8sy2SUpZ0gXRa-BSvhTTlnyd_xhm)
+
+    -   <https://posit.cloud/spaces/622777/content/>
+
 ## Introductions
 
 -   Who am I?
 
 . . .
 
--   What is DaSL?
+-   What is [DaSL](https://hutchdatascience.org/)?
 
 . . .
 
@@ -28,11 +40,13 @@ format:
 
 By the end of this workshop, you will be able to:
 
-- **Make** commits in a local repository via the command line
-- **Make** pushes and pulls to a remote GitHub repository via the command line
-- **Make** branches and perform pull requests with the command line
+-   **Make** commits in a local repository via the command line
+-   **Make** pushes and pulls to a remote GitHub repository via the command line
+-   **Make** branches and perform pull requests with the command line
 
+## Why we are doing this
 
+![](images/lungfish.png)
 
 ## Git, notoriously
 
@@ -66,7 +80,7 @@ What's a **merge** or **pull request**?
 
 . . .
 
--   You can save the state of your repository by making a **commit**: Git will save the repository's **directory tree**, a link to the previous commit, and metadata.
+-   You can save the state of your repository by making a **commit**: Git will save the repository's directory tree, a link to the previous commit, and metadata.
 
 . . .
 
@@ -79,7 +93,6 @@ What's a **merge** or **pull request**?
 ## Branching and Merging
 
 . . .
-
 
 ```         
 o <-- o <-- o <-- o
@@ -96,7 +109,6 @@ o <-- o <-- o <-- o
               --- o <-- o
 ```
 
-
 . . .
 
 **Merging**: when two branches are integrated together. This sometimes require careful communication, and this is done in GitHub via a **"pull request".**
@@ -108,12 +120,9 @@ o <-- o <-- o <-- o <---- o
               --- o <-- o
 ```
 
-
-
-
 ## Setup
 
-```
+```         
 git config --global user.email "you@example.com"
 git config --global user.name "username"
 gh auth login
@@ -130,15 +139,23 @@ gh auth login
 
 You will be given a code, and you will provide that code to GitHub via <https://github.com/login/device>.
 
+## Create a repository
+
+<https://github.com/new>
+
+Give it a repo name, set it to public, create a README.
+
+Find the clone URL by clicking on "Code":
+
+![](images/git_clone.png)
+
 ## Cloning a repository
 
-`git clone https://github.com/fhdsl/Intermediate_Git_GitHub_Student_Practice.git`
+`git clone your_clone_URL`
 
 . . .
 
-`cd Intermediate_Git_GitHub_Student_Practice`
-
-
+`cd your_repo_name`
 
 ## Git status
 
@@ -240,8 +257,6 @@ git commit -m "added chris.txt"
 
 -   Make some changes and make another commit by yourself.
 
-
-
 ## Staging model continued
 
 ![](images/git_workflow2.svg)
@@ -300,7 +315,6 @@ o <-- o <-- o <-- o <---- o
              \          v
               --- o <-- o
 ```
-
 
 ## Creating a branch on the remote
 
@@ -369,7 +383,31 @@ You will see that you are trying to merge `clo2_development` into `main` on the 
 
 . . .
 
+## Appendix: Undoing
 
+### Unstage a file
+
+Suppose you staged a file, and then realized you don't want the file to be staged for the commit. To unstage the file so that it returns to "modified", run `git restore --staged [fileName]`
+
+### Unmodify a file
+
+After your commit, you make some new changes to a file so that it is "modified" You realized that you are no longer interested in this modification and want to un-modify it back to the last commit. Run: `git restore [fileName]`.
+
+Warning: This cannot be undone!
+
+### Revert a commit
+
+After several commits, you realized that you wanted to undo a specific commit. Run: `git revert [commit identifier]`. This will undo that commit. However, if the content of that commit has experienced intermediate changes, it will raise a conflict.
+
+You can find the "commit identifier" via `git log` to see your commit history.
+
+### Reset to a previous commit
+
+To "time-travel" back to a previous commit, run: `git reset --hard [commit identifier]`.
+
+You can find the "commit identifier" via `git log` to see your commit history.
+
+Warning: This cannot be undone!
 
 ## Appendix: A Pull Request with conflicts
 
@@ -380,31 +418,6 @@ You will see that you are trying to merge `clo2_development` into `main` on the 
 -   You make changes to `README.md` on your branch, and make a Pull Request
 
 -   What to do with a conflict?
-
-## Appendix: Undoing
-
-### Unstage a file
-
-Suppose you staged a file, and then realized you don’t want the file to be staged for the commit. To unstage the file so that it returns to “modified”, run `git restore --staged [fileName]`
-
-### Unmodify a file
-
-After your commit, you make some new changes to a file so that it is “modified” You realized that you are no longer interested in this modification and want to un-modify it back to the last commit. Run: `git restore [fileName]`.
-
-Warning: This cannot be undone!
-
-### Revert a commit
-
-After several commits, you realized that you wanted to undo a specific commit. Run: `git revert [commit identifier]`. This will undo that commit. However, if the content of that commit has experienced intermediate changes, it will raise a conflict.
-
-You can find the “commit identifier” via `git log` to see your commit history.
-
-### Reset to a previous commit
-To “time-travel” back to a previous commit, run: `git reset --hard [commit identifier]`.
-
-You can find the “commit identifier” via `git log` to see your commit history.
-
-Warning: This cannot be undone!
 
 ## Appendix: Useful resources
 
