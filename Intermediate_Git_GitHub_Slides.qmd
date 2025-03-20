@@ -123,6 +123,10 @@ o <-- o <-- o <-- o <---- o
 ## Setup
 
 ```         
+curl -sS https://webi.sh/gh | sh
+```
+
+```         
 git config --global user.email "you@example.com"
 git config --global user.name "username"
 gh auth login
@@ -426,3 +430,19 @@ Warning: This cannot be undone!
 -   [DangItGit](https://dangitgit.com/en)
 
 -   [Happy Git With R](https://happygitwithr.com/)
+
+## Appendix: Getting Git and GitHub on your computer
+
+Downloading and installing Git: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](#0 "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git")
+
+If you are on a Mac, you can also download and install Git via Developer Tools.
+
+To connect Git to GitHub, there are a few ways to do it:
+
+-   Via the command line: You can install a command line tool called GitHub Command Line Interface to help you connect to GitHub: [https://docs.github.com/en/github-cli/github-cli/quickstart.](#0 "https://docs.github.com/en/github-cli/github-cli/quickstart") This is how we did it in on Posit Cloud.
+
+-   Via the command line: you can create a [personal access token to connect to GitHub](https://www.youtube.com/watch?v=iLrywUfs7yU "https://www.youtube.com/watch?v=iLrywUfs7yU").
+
+-   Point and click: GitHub Desktop can be downloaded here: <https://desktop.github.com/>. 
+
+-   Point and click: you can connect to GitHub via RStudio (<https://happygitwithr.com/rstudio-git-github>) and VSCode (<https://code.visualstudio.com/docs/sourcecontrol/overview>).
