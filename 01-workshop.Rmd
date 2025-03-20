@@ -289,6 +289,32 @@ You should be able to see the new file in the `main` branch now.
 
 Sometimes, when merging branches together during a pull request, there will be changes that will be in conflicts with each other. GitHub will stop the process and ask you fix it. A nice guide to this can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github).
 
+## Appendix: Undoing
+
+### Unstage a file
+
+Suppose you staged a file, and then realized you don\'t want the file to be staged for the commit. To unstage the file so that it returns to \"modified\", run `git restore --staged [fileName]`.
+
+### Unmodify a file
+
+After your commit, you make some new changes to a file so that it is \"modified\" You realized that you are no longer interested in this modification and want to un-modify it back to the last commit. Run: `git restore [fileName]`.
+
+*Warning: This cannot be undone!*
+
+### Revert a commit
+
+After several commits, you realized that you wanted to undo a specific commit. Run: `git revert [commit identifier]`. This will undo that commit. However, if the content of that commit has experienced intermediate changes, it will raise a conflict.
+
+You can find the \"commit identifier\" via `git log` to see your commit history.
+
+### Reset to a previous commit
+
+To \"time-travel\" back to a previous commit, run: `git reset --hard [commit identifier]`.
+
+You can find the \"commit identifier\" via `git log` to see your commit history.
+
+*Warning: This cannot be undone!*
+
 ## Appendix: Code reviews during a pull request
 
 Suppose that you want someone's approval of your pull request before it is merged. You can add other users in the repository to be a reviewer of your work. This process of code reviewing before a branch is merged is highly recommended in collaborative work.
