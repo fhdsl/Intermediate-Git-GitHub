@@ -1,6 +1,6 @@
 ---
-title: "Collaborative Git and GitHub"
-date: "January, 2024"
+title: "Intermediate Git and GitHub"
+date: "March, 2025"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -13,13 +13,21 @@ output:
       toc: true
 ---
 
-# About this Course {-}
+# Learning Objectives {-}
 
-You will expand your current knowledge of Git and GitHub to help your research be more collaborative, reproducible, and transparent. You will learn how to develop your work independently on a “branch” before “merging” it back to a shared repository, and resolve any conflicts along the way. Then, you will learn about the pull request model of collaboration on GitHub and how to conduct code reviews.
+
+By the end of this workshop, you will be able to:
+
+- Make commits in a local repository via the command line
+
+- Make pushes and pulls to a remote GitHub repository via the command line
+
+- Make branches and perform pull requests with the command line
+
 
 
 ## Target Audience
 
-Researchers who want to work on a code base collaboratively in a version-controlled manner.
+Completion of Intro to Git and GitHub workshop, or have conceptual familiarity of the Git data model (committing, pushing, branching, merging) on GitHub, but have not used Git from the command line before.
 
 
