@@ -89,14 +89,12 @@
 <li class="chapter" data-level="1.3" data-path="workshop-notes.html"><a href="workshop-notes.html#making-commits"><i class="fa fa-check"></i><b>1.3</b> Making commits</a></li>
 <li class="chapter" data-level="1.4" data-path="workshop-notes.html"><a href="workshop-notes.html#pushing-to-github"><i class="fa fa-check"></i><b>1.4</b> Pushing to GitHub</a></li>
 <li class="chapter" data-level="1.5" data-path="workshop-notes.html"><a href="workshop-notes.html#branching"><i class="fa fa-check"></i><b>1.5</b> Branching</a></li>
-<li class="chapter" data-level="1.6" data-path="workshop-notes.html"><a href="workshop-notes.html#merging-and-pull-requests"><i class="fa fa-check"></i><b>1.6</b> Merging and Pull Requests</a>
-<ul>
-<li class="chapter" data-level="1.6.1" data-path="workshop-notes.html"><a href="workshop-notes.html#merge-conflicts-during-pull-requests"><i class="fa fa-check"></i><b>1.6.1</b> Merge conflicts during pull requests</a></li>
-</ul></li>
-<li class="chapter" data-level="1.7" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-code-reviews-during-a-pull-request"><i class="fa fa-check"></i><b>1.7</b> Appendix: Code reviews during a pull request</a></li>
-<li class="chapter" data-level="1.8" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-github-issues"><i class="fa fa-check"></i><b>1.8</b> Appendix: GitHub issues</a></li>
-<li class="chapter" data-level="1.9" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-getting-git-and-github-on-your-computer"><i class="fa fa-check"></i><b>1.9</b> Appendix: Getting Git and GitHub on your computer</a></li>
-<li class="chapter" data-level="1.10" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-references"><i class="fa fa-check"></i><b>1.10</b> Appendix: References</a></li>
+<li class="chapter" data-level="1.6" data-path="workshop-notes.html"><a href="workshop-notes.html#merging-and-pull-requests"><i class="fa fa-check"></i><b>1.6</b> Merging and Pull Requests</a></li>
+<li class="chapter" data-level="1.7" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-merge-conflicts-during-pull-requests"><i class="fa fa-check"></i><b>1.7</b> Appendix: Merge conflicts during pull requests</a></li>
+<li class="chapter" data-level="1.8" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-code-reviews-during-a-pull-request"><i class="fa fa-check"></i><b>1.8</b> Appendix: Code reviews during a pull request</a></li>
+<li class="chapter" data-level="1.9" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-github-issues"><i class="fa fa-check"></i><b>1.9</b> Appendix: GitHub issues</a></li>
+<li class="chapter" data-level="1.10" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-getting-git-and-github-on-your-computer"><i class="fa fa-check"></i><b>1.10</b> Appendix: Getting Git and GitHub on your computer</a></li>
+<li class="chapter" data-level="1.11" data-path="workshop-notes.html"><a href="workshop-notes.html#appendix-references"><i class="fa fa-check"></i><b>1.11</b> Appendix: References</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
 <li class="chapter" data-level="2" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i><b>2</b> References</a></li>
@@ -306,13 +304,13 @@ git push</code></pre>
 <p><img src="images/git_PR3.png" /></p>
 <p>Click <em>“Merge pull request”</em> to finish!</p>
 <p>You should be able to see the new file in the <code>main</code> branch now.</p>
-<div id="merge-conflicts-during-pull-requests" class="section level3 hasAnchor" number="1.6.1">
-<h3><span class="header-section-number">1.6.1</span> Merge conflicts during pull requests<a href="workshop-notes.html#merge-conflicts-during-pull-requests" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="appendix-merge-conflicts-during-pull-requests" class="section level2 hasAnchor" number="1.7">
+<h2><span class="header-section-number">1.7</span> Appendix: Merge conflicts during pull requests<a href="workshop-notes.html#appendix-merge-conflicts-during-pull-requests" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Sometimes, when merging branches together during a pull request, there will be changes that will be in conflicts with each other. GitHub will stop the process and ask you fix it. A nice guide to this can be found <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">here</a>.</p>
 </div>
-</div>
-<div id="appendix-code-reviews-during-a-pull-request" class="section level2 hasAnchor" number="1.7">
-<h2><span class="header-section-number">1.7</span> Appendix: Code reviews during a pull request<a href="workshop-notes.html#appendix-code-reviews-during-a-pull-request" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="appendix-code-reviews-during-a-pull-request" class="section level2 hasAnchor" number="1.8">
+<h2><span class="header-section-number">1.8</span> Appendix: Code reviews during a pull request<a href="workshop-notes.html#appendix-code-reviews-during-a-pull-request" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Suppose that you want someone’s approval of your pull request before it is merged. You can add other users in the repository to be a reviewer of your work. This process of code reviewing before a branch is merged is highly recommended in collaborative work.</p>
 <p>Some advice for a creating helpful pull requests for reviewers:</p>
 <ul>
@@ -329,14 +327,14 @@ git push</code></pre>
 </ul>
 <p>More advice on code review can be found here for <a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-an-author.html">pull request authors</a>, and <a href="https://jhudatascience.org/Adv_Reproducibility_in_Cancer_Informatics/engaging-in-code-review---as-a-reviewer.html">pull request reviewers</a>.</p>
 </div>
-<div id="appendix-github-issues" class="section level2 hasAnchor" number="1.8">
-<h2><span class="header-section-number">1.8</span> Appendix: GitHub issues<a href="workshop-notes.html#appendix-github-issues" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="appendix-github-issues" class="section level2 hasAnchor" number="1.9">
+<h2><span class="header-section-number">1.9</span> Appendix: GitHub issues<a href="workshop-notes.html#appendix-github-issues" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Another nice collaborative feature of GitHub is GitHub issues. GitHub issues are a way for people to give feedback on your repository.</p>
 <p>Here is a common scenario of using GitHub issues in the wild: you publish a piece of software on GitHub, and other users try it out. They are confused about how to run your code, because they are getting errors, so they return to the GitHub repository and post a GitHub issue documenting their error. You can then create a branch from this issue, make changes to your code to resolve the error, then use the pull request model to merge it back to the main branch! GitHub issues are also a common way to document to-do features you want to implement in the future.</p>
 <p><img src="images/git_issue.png" /></p>
 </div>
-<div id="appendix-getting-git-and-github-on-your-computer" class="section level2 hasAnchor" number="1.9">
-<h2><span class="header-section-number">1.9</span> Appendix: Getting Git and GitHub on your computer<a href="workshop-notes.html#appendix-getting-git-and-github-on-your-computer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="appendix-getting-git-and-github-on-your-computer" class="section level2 hasAnchor" number="1.10">
+<h2><span class="header-section-number">1.10</span> Appendix: Getting Git and GitHub on your computer<a href="workshop-notes.html#appendix-getting-git-and-github-on-your-computer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Downloading and installing Git: <a href="#id_0" title="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>
 <p>If you are on a Mac, you can also download and install Git via Developer Tools.</p>
 <p>To connect Git to GitHub, there are a few ways to do it:</p>
@@ -347,8 +345,8 @@ git push</code></pre>
 <li><p>Point and click: you can connect to GitHub via RStudio (<a href="https://happygitwithr.com/rstudio-git-github" class="uri">https://happygitwithr.com/rstudio-git-github</a>) and VSCode (<a href="https://code.visualstudio.com/docs/sourcecontrol/overview" class="uri">https://code.visualstudio.com/docs/sourcecontrol/overview</a>).</p></li>
 </ul>
 </div>
-<div id="appendix-references" class="section level2 hasAnchor" number="1.10">
-<h2><span class="header-section-number">1.10</span> Appendix: References<a href="workshop-notes.html#appendix-references" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="appendix-references" class="section level2 hasAnchor" number="1.11">
+<h2><span class="header-section-number">1.11</span> Appendix: References<a href="workshop-notes.html#appendix-references" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">ProGit</a>: We covered chapter 3 in this workshop.</p></li>
 <li><p><a href="https://dangitgit.com/">DangItGit</a>: Excellent starting point for common Git problems.</p></li>

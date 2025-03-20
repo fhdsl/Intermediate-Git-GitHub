@@ -283,7 +283,7 @@ Click *"Merge pull request"* to finish!
 
 You should be able to see the new file in the `main` branch now.
 
-### Merge conflicts during pull requests
+## Appendix: Merge conflicts during pull requests
 
 Sometimes, when merging branches together during a pull request, there will be changes that will be in conflicts with each other. GitHub will stop the process and ask you fix it. A nice guide to this can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github).
 

@@ -8,7 +8,7 @@ making-commits
 pushing-to-github
 branching
 merging-and-pull-requests
-merge-conflicts-during-pull-requests
+appendix-merge-conflicts-during-pull-requests
 appendix-code-reviews-during-a-pull-request
 appendix-github-issues
 appendix-getting-git-and-github-on-your-computer
