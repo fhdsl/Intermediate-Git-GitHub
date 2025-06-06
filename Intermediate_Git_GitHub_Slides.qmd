@@ -423,6 +423,8 @@ Warning: This cannot be undone!
 
 -   What to do with a conflict?
 
+A nice guide to this can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github).
+
 ## Appendix: Useful resources
 
 -   [GitHub Desktop](https://desktop.github.com/)
