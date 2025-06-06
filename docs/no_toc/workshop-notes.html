@@ -320,22 +320,22 @@ git push</code></pre>
 <h2><span class="header-section-number">1.8</span> Appendix: Undoing<a href="workshop-notes.html#appendix-undoing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="unstage-a-file" class="section level3 hasAnchor" number="1.8.1">
 <h3><span class="header-section-number">1.8.1</span> Unstage a file<a href="workshop-notes.html#unstage-a-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Suppose you staged a file, and then realized you don't want the file to be staged for the commit. To unstage the file so that it returns to "modified", run <code>git restore --staged [fileName]</code>.</p>
+<p>Suppose you staged a file, and then realized you don’t want the file to be staged for the commit. To unstage the file so that it returns to “modified”, run <code>git restore --staged [fileName]</code>.</p>
 </div>
 <div id="unmodify-a-file" class="section level3 hasAnchor" number="1.8.2">
 <h3><span class="header-section-number">1.8.2</span> Unmodify a file<a href="workshop-notes.html#unmodify-a-file" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>After your commit, you make some new changes to a file so that it is "modified" You realized that you are no longer interested in this modification and want to un-modify it back to the last commit. Run: <code>git restore [fileName]</code>.</p>
+<p>After your commit, you make some new changes to a file so that it is “modified” You realized that you are no longer interested in this modification and want to un-modify it back to the last commit. Run: <code>git restore [fileName]</code>.</p>
 <p><em>Warning: This cannot be undone!</em></p>
 </div>
 <div id="revert-a-commit" class="section level3 hasAnchor" number="1.8.3">
 <h3><span class="header-section-number">1.8.3</span> Revert a commit<a href="workshop-notes.html#revert-a-commit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>After several commits, you realized that you wanted to undo a specific commit. Run: <code>git revert [commit identifier]</code>. This will undo that commit. However, if the content of that commit has experienced intermediate changes, it will raise a conflict.</p>
-<p>You can find the "commit identifier" via <code>git log</code> to see your commit history.</p>
+<p>You can find the “commit identifier” via <code>git log</code> to see your commit history.</p>
 </div>
 <div id="reset-to-a-previous-commit" class="section level3 hasAnchor" number="1.8.4">
 <h3><span class="header-section-number">1.8.4</span> Reset to a previous commit<a href="workshop-notes.html#reset-to-a-previous-commit" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To "time-travel" back to a previous commit, run: <code>git reset --hard [commit identifier]</code>.</p>
-<p>You can find the "commit identifier" via <code>git log</code> to see your commit history.</p>
+<p>To “time-travel” back to a previous commit, run: <code>git reset --hard [commit identifier]</code>.</p>
+<p>You can find the “commit identifier” via <code>git log</code> to see your commit history.</p>
 <p><em>Warning: This cannot be undone!</em></p>
 </div>
 </div>
