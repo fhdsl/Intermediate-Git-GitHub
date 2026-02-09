@@ -336,36 +336,21 @@
 <h2>Intermediate Git and GitHub</h2>
 <p>As you get settled…</p>
 <ul>
-<li><p>Did you put your GitHub username <a href="https://docs.google.com/spreadsheets/d/1Bu3mGtDcMpp42J8hnYSgRFfrbqWV_RchtYQX1DAyZnI/edit?gid=0#gid=0">in this spreadsheet</a>?</p></li>
+<li><p>Did you put your GitHub username <a href="https://docs.google.com/spreadsheets/d/1DmTN-yGKx8txJ4YDzkdq6U67t1-KAFtDoa9UwzPKYB8/edit?gid=0#gid=0">in this spreadsheet</a>?</p></li>
 <li><p>Accept GitHub repository invitation in email connected to GitHub account</p>
 <ul>
-<li><a href="https://github.com/fhdsl/Intermediate_Git_GitHub_Student_Practice" class="uri">https://github.com/fhdsl/Intermediate_Git_GitHub_Student_Practice</a></li>
+<li><a href="https://github.com/fhdsl/bookrecs_winter_2026" class="uri">https://github.com/fhdsl/bookrecs_winter_2026</a></li>
 </ul></li>
-<li><p>Accept Posit Cloud invitation: <a href="https://posit.cloud/spaces/622777/join?access_code=9opYcuGRx2Th8sy2SUpZ0gXRa-BSvhTTlnyd_xhmhttps://posit.cloud/spaces/622777/join?access_code=9opYcuGRx2Th8sy2SUpZ0gXRa-BSvhTTlnyd_xhm">https://posit.cloud/spaces/622777/join?access_code=9opYcuGRx2Th8sy2SUpZ0gXRa-BSvhTTlnyd_xhm</a></p>
-<ul>
-<li><a href="https://posit.cloud/spaces/622777/content/" class="uri">https://posit.cloud/spaces/622777/content/</a></li>
-</ul></li>
+<li><p>Accept Posit Cloud invitation: <a href="https://posit.cloud/spaces/748776/join?access_code=t8MXFJS3goxS3CQiErIs7KN1ms8fH4M1pN5JlLXT" class="uri">https://posit.cloud/spaces/748776/join?access_code=t8MXFJS3goxS3CQiErIs7KN1ms8fH4M1pN5JlLXT</a></p></li>
 </ul>
 </section>
 <section id="introductions" class="slide level2">
 <h2>Introductions</h2>
 <ul>
-<li>Who am I?</li>
-</ul>
-<div class="fragment">
-<ul>
-<li>What is <a href="https://hutchdatascience.org/">DaSL</a>?</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li><p>Who are you?</p>
-<ul>
 <li><p>Name, pronouns, group you work in</p></li>
 <li><p>What brought you here?</p></li>
-</ul></li>
+<li><p>What content (book, tv, movie, podcast…) have you enjoyed lately?</p></li>
 </ul>
-</div>
 </section>
 <section id="learning-objectives" class="slide level2">
 <h2>Learning Objectives</h2>
@@ -374,8 +359,14 @@
 <li><strong>Make</strong> commits in a local repository via the command line</li>
 <li><strong>Make</strong> pushes and pulls to a remote GitHub repository via the command line</li>
 <li><strong>Make</strong> branches and perform pull requests with the command line</li>
+<li><strong>Describe</strong> software such as GitHub Desktop that as serves as point-and-click alternatives</li>
 </ul>
 </section>
+<section id="why-we-are-doing-this" class="slide level2">
+<h2>Why we are doing this</h2>
+<p>Version control, reproducibility…</p>
+
+<img data-src="images/lungfish.png" class="r-stretch"></section>
 <section id="git-notoriously" class="slide level2">
 <h2>Git, notoriously</h2>
 
@@ -393,7 +384,7 @@
 <p>What’s a <strong>branch</strong>?</p>
 </div>
 <div class="fragment">
-<p>What’s a <strong>merge</strong> or <strong>pull request</strong>?</p>
+<p>What’s a <strong>merge</strong>? What’s a <strong>pull request</strong>?</p>
 </div>
 </section>
 <section id="gits-data-model" class="slide level2">
@@ -407,9 +398,6 @@
 <ul>
 <li>You can save the state of your repository by making a <strong>commit</strong>: Git will save the repository’s directory tree, a link to the previous commit, and metadata.</li>
 </ul>
-</div>
-<div class="fragment">
-<p><img data-src="https://raw.githubusercontent.com/fhdsl/intro_git/refs/heads/main/main-branch-bf6b49a2efd6b2dc9e311e7a666e2b52.png"></p>
 </div>
 <div class="fragment">
 <p><img data-src="https://git-scm.com/book/en/v2/images/snapshots.png"></p>
@@ -435,8 +423,16 @@
               --- o &lt;-- o</code></pre>
 </div>
 </section>
+<section id="last-week-vs.-this-week" class="slide level2">
+<h2>Last week vs.&nbsp;this week</h2>
+
+<img data-src="images/git_remotes.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">Source: https://janvi01.hashnode.dev/getting-started-with-git-and-github-a-beginners-tutorial</p></section>
+<section id="part-1-install-and-using-a-repository-by-ourselves" class="slide level2">
+<h2>Part 1: Install and using a repository by ourselves</h2>
+</section>
 <section id="setup" class="slide level2">
 <h2>Setup</h2>
+<pre><code>curl -sS https://webi.sh/gh | sh</code></pre>
 <pre><code>git config --global user.email "you@example.com"
 git config --global user.name "username"
 gh auth login</code></pre>
@@ -572,8 +568,12 @@ To https://github.com/fhdsl/Collaborative_Git_GitHub_Student_Practice.git
 <p>If the remote repository has been updated, you will have to run <code>git pull</code> before you can run <code>git push</code>.</p>
 </div>
 </section>
-<section id="branching-and-merging-1" class="slide level2">
-<h2>Branching and Merging</h2>
+<section id="where-are-we-now" class="slide level2">
+<h2>Where are we now?</h2>
+
+<img data-src="images/git_remotes.png" width="800" class="r-stretch quarto-figure-center"><p class="caption">Source: https://janvi01.hashnode.dev/getting-started-with-git-and-github-a-beginners-tutorial</p></section>
+<section id="part-2-branches-and-pull-requests-on-a-shared-repository" class="slide level2">
+<h2>Part 2: Branches and pull requests on a shared repository</h2>
 <div class="fragment">
 <p>Linear:</p>
 <pre><code>o &lt;-- o &lt;-- o &lt;-- o</code></pre>
@@ -593,6 +593,12 @@ To https://github.com/fhdsl/Collaborative_Git_GitHub_Student_Practice.git
               --- o &lt;-- o</code></pre>
 </div>
 </section>
+<section id="our-shared-repository" class="slide level2">
+<h2>Our shared repository:</h2>
+<p><a href="https://github.com/fhdsl/bookrecs_winter_2026" class="uri">https://github.com/fhdsl/bookrecs_winter_2026</a></p>
+<p>To create a copy of this repository on your local:</p>
+<pre><code>git clone https://github.com/fhdsl/bookrecs_winter_2026.git</code></pre>
+</section>
 <section id="creating-a-branch-on-the-remote" class="slide level2">
 <h2>Creating a branch on the remote</h2>
 
@@ -602,7 +608,7 @@ To https://github.com/fhdsl/Collaborative_Git_GitHub_Student_Practice.git
 <p>The branch <code>clo2_development</code> is created on the remote, but it hasn’t been updated locally. We run <code>git pull</code> locally to update it and switch to that branch via <code>git checkout</code>.</p>
 <div class="fragment">
 <pre><code>% git pull
-From https://github.com/fhdsl/S2_Collaborative_Git_GitHub_Student_Practice
+From https://github.com/fhdsl/Intermediate_Git_GitHub_Student_Practice_Summer_2025
  * [new branch]      clo2_development -&gt; origin/clo2_development
 Already up to date.
 
@@ -668,14 +674,30 @@ Switched to a new branch 'clo2_development'</code></pre>
 <li><p>You make changes to <code>README.md</code> on your branch, and make a Pull Request</p></li>
 <li><p>What to do with a conflict?</p></li>
 </ul>
+<p>A nice guide to this can be found <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-on-github">here</a>.</p>
 </section>
 <section id="appendix-useful-resources" class="slide level2">
 <h2>Appendix: Useful resources</h2>
 <ul>
 <li><p><a href="https://desktop.github.com/">GitHub Desktop</a></p></li>
 <li><p><a href="https://dangitgit.com/en">DangItGit</a></p></li>
-<li><p><a href="https://happygitwithr.com/">Happy Git With R</a></p></li>
 </ul>
+</section>
+<section id="appendix-getting-git-and-github-on-your-computer" class="slide level2">
+<h2>Appendix: Getting Git and GitHub on your computer</h2>
+<p>Downloading and installing Git: <a href="#/0" title="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>
+<p>If you are on a Mac, you can also download and install Git via Developer Tools.</p>
+<p>To connect Git to GitHub, there are a few ways to do it:</p>
+<ul>
+<li><p>Via the command line: You can install a command line tool called GitHub Command Line Interface to help you connect to GitHub: <a href="#/0" title="https://docs.github.com/en/github-cli/github-cli/quickstart">https://docs.github.com/en/github-cli/github-cli/quickstart.</a> This is how we did it in on Posit Cloud.</p></li>
+<li><p>Via the command line: you can create a&nbsp;<a href="https://www.youtube.com/watch?v=iLrywUfs7yU" title="https://www.youtube.com/watch?v=iLrywUfs7yU">personal access token to connect to&nbsp;GitHub</a>.</p></li>
+<li><p>Point and click: GitHub Desktop can be downloaded here:&nbsp;<a href="https://desktop.github.com/" class="uri">https://desktop.github.com/</a>.&nbsp;</p></li>
+<li><p>Point and click: you can connect to GitHub via RStudio (<a href="https://happygitwithr.com/rstudio-git-github" class="uri">https://happygitwithr.com/rstudio-git-github</a>) and VSCode (<a href="https://code.visualstudio.com/docs/sourcecontrol/overview" class="uri">https://code.visualstudio.com/docs/sourcecontrol/overview</a>).</p></li>
+</ul>
+</section>
+<section id="how-was-the-workshop-for-you-today" class="slide level2">
+<h2>How was the workshop for you today?</h2>
+<p><a href="https://forms.gle/AyiVRsqZM4BBGLE98" class="uri">https://forms.gle/AyiVRsqZM4BBGLE98</a></p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 

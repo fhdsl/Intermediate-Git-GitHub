@@ -10,31 +10,21 @@ format:
 
 As you get settled...
 
--   Did you put your GitHub username [in this spreadsheet](https://docs.google.com/spreadsheets/d/1Bu3mGtDcMpp42J8hnYSgRFfrbqWV_RchtYQX1DAyZnI/edit?gid=0#gid=0)?
+-   Did you put your GitHub username [in this spreadsheet](https://docs.google.com/spreadsheets/d/1DmTN-yGKx8txJ4YDzkdq6U67t1-KAFtDoa9UwzPKYB8/edit?gid=0#gid=0)?
 
 -   Accept GitHub repository invitation in email connected to GitHub account
 
-    -   <https://github.com/fhdsl/Intermediate_Git_GitHub_Student_Practice>
+    -   <https://github.com/fhdsl/bookrecs_winter_2026>
 
--   Accept Posit Cloud invitation: [https://posit.cloud/spaces/622777/join?access_code=9opYcuGRx2Th8sy2SUpZ0gXRa-BSvhTTlnyd_xhm](https://posit.cloud/spaces/622777/join?access_code=9opYcuGRx2Th8sy2SUpZ0gXRa-BSvhTTlnyd_xhmhttps://posit.cloud/spaces/622777/join?access_code=9opYcuGRx2Th8sy2SUpZ0gXRa-BSvhTTlnyd_xhm)
-
-    -   <https://posit.cloud/spaces/622777/content/>
+-   Accept Posit Cloud invitation: <https://posit.cloud/spaces/748776/join?access_code=t8MXFJS3goxS3CQiErIs7KN1ms8fH4M1pN5JlLXT>
 
 ## Introductions
 
--   Who am I?
+-   Name, pronouns, group you work in
 
-. . .
+-   What brought you here?
 
--   What is [DaSL](https://hutchdatascience.org/)?
-
-. . .
-
--   Who are you?
-
-    -   Name, pronouns, group you work in
-
-    -   What brought you here?
+-   What content (book, tv, movie, podcast...) have you enjoyed lately?
 
 ## Learning Objectives
 
@@ -43,8 +33,11 @@ By the end of this workshop, you will be able to:
 -   **Make** commits in a local repository via the command line
 -   **Make** pushes and pulls to a remote GitHub repository via the command line
 -   **Make** branches and perform pull requests with the command line
+-   **Describe** software such as GitHub Desktop that as serves as point-and-click alternatives
 
 ## Why we are doing this
+
+Version control, reproducibility...
 
 ![](images/lungfish.png)
 
@@ -70,7 +63,7 @@ What's a **branch**?
 
 . . .
 
-What's a **merge** or **pull request**?
+What's a **merge**? What's a **pull request**?
 
 ## Git's Data Model
 
@@ -81,10 +74,6 @@ What's a **merge** or **pull request**?
 . . .
 
 -   You can save the state of your repository by making a **commit**: Git will save the repository's directory tree, a link to the previous commit, and metadata.
-
-. . .
-
-![](https://raw.githubusercontent.com/fhdsl/intro_git/refs/heads/main/main-branch-bf6b49a2efd6b2dc9e311e7a666e2b52.png)
 
 . . .
 
@@ -119,6 +108,12 @@ o <-- o <-- o <-- o <---- o
              \          v
               --- o <-- o
 ```
+
+## Last week vs. this week
+
+![Source: https://janvi01.hashnode.dev/getting-started-with-git-and-github-a-beginners-tutorial](images/git_remotes.png){width="800"}
+
+## Part 1: Install and using a repository by ourselves
 
 ## Setup
 
@@ -288,7 +283,11 @@ To https://github.com/fhdsl/Collaborative_Git_GitHub_Student_Practice.git
 
 If the remote repository has been updated, you will have to run `git pull` before you can run `git push`.
 
-## Branching and Merging
+## Where are we now?
+
+![Source: https://janvi01.hashnode.dev/getting-started-with-git-and-github-a-beginners-tutorial](images/git_remotes.png){width="800"}
+
+## Part 2: Branches and pull requests on a shared repository
 
 . . .
 
@@ -320,6 +319,16 @@ o <-- o <-- o <-- o <---- o
               --- o <-- o
 ```
 
+## Our shared repository:
+
+<https://github.com/fhdsl/bookrecs_winter_2026>
+
+To create a copy of this repository on your local:
+
+```         
+git clone https://github.com/fhdsl/bookrecs_winter_2026.git
+```
+
 ## Creating a branch on the remote
 
 ![](images/git_branch.png)
@@ -332,7 +341,7 @@ The branch `clo2_development` is created on the remote, but it hasn't been updat
 
 ```         
 % git pull
-From https://github.com/fhdsl/S2_Collaborative_Git_GitHub_Student_Practice
+From https://github.com/fhdsl/Intermediate_Git_GitHub_Student_Practice_Summer_2025
  * [new branch]      clo2_development -> origin/clo2_development
 Already up to date.
 
@@ -431,8 +440,6 @@ A nice guide to this can be found [here](https://docs.github.com/en/pull-request
 
 -   [DangItGit](https://dangitgit.com/en)
 
--   [Happy Git With R](https://happygitwithr.com/)
-
 ## Appendix: Getting Git and GitHub on your computer
 
 Downloading and installing Git: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](#0 "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git")
@@ -448,3 +455,7 @@ To connect Git to GitHub, there are a few ways to do it:
 -   Point and click: GitHub Desktop can be downloaded here: <https://desktop.github.com/>. 
 
 -   Point and click: you can connect to GitHub via RStudio (<https://happygitwithr.com/rstudio-git-github>) and VSCode (<https://code.visualstudio.com/docs/sourcecontrol/overview>).
+
+## How was the workshop for you today?
+
+<https://forms.gle/AyiVRsqZM4BBGLE98>
